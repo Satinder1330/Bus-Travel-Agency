@@ -4,7 +4,7 @@ import java.sql.*;
 import java.util.Scanner;
 
 public class BusPortal {
-    private static final String url = "jdbc:mysql://127.0.0.1:3306/bus_agency";
+    private static final String url = "jdbc:mysql://127.0.0.1:3306/BusAgency";
     private static final String username="root";
     private static final String password ="Basoli@1313";
 
@@ -26,10 +26,10 @@ public class BusPortal {
                 System.out.println("SELECT YOUR OPTION : ");
                 int option = input.nextInt();
                 switch (option){
-                    case 1:Services(connection);
-                    case 2:book(connection,input);
-                    case 3:view(connection,input);
-                    case 4:System.exit(0);
+                    case 1->Services(connection);
+                    case 2->book(connection,input);
+                    case 3->view(connection,input);
+                    case 4->System.exit(0);
                 }
             }
 
